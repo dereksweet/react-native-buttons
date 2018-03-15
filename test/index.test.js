@@ -1,7 +1,8 @@
 import {jsdom} from 'jsdom';
 global.document = jsdom('');
 global.window = document.defaultView;
-import React, {Component, propTypes} from 'react';
+import React, {Component} from 'react';
+import { PropTypes } from 'prop-types'
 import {
   Platform,
   View,

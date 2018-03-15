@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { PropTypes } from 'prop-types';
 import {
   Text,
   TouchableHighlight,
@@ -118,11 +119,11 @@ class Button extends Component {
 }
 
 Button.propTypes = {
-  onPress: React.PropTypes.func.isRequired,
-  disabled: React.PropTypes.bool,
-  theme: React.PropTypes.string.isRequired,
-  size: React.PropTypes.oneOf(['default', 'small', 'large']),
-  type: React.PropTypes.oneOf(['ghost', 'surface'])
+  onPress: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
+  theme: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(['default', 'small', 'large']),
+  type: PropTypes.oneOf(['ghost', 'surface'])
 };
 
 export default Button;

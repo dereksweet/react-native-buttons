@@ -119,7 +119,6 @@ class Button extends Component {
 }
 
 Button.propTypes = {
-  onPress: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   theme: PropTypes.string.isRequired,
   size: PropTypes.oneOf(['default', 'small', 'large']),
